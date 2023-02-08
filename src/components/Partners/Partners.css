@@ -1,0 +1,19 @@
+body {
+    scroll-behavior: smooth;
+}
+
+
+.PartnersContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0b2541;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.PartnersContainer img {
+    max-width: 70px;
+}

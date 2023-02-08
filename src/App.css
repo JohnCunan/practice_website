@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+:root {
+    --nav-color: #051527;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-container {
+    background-color: var(--nav-color);
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo img {
+    max-width: 150px;
+    max-height: 150px;
+    padding-left: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.links ul {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 20px;
+    border: 2px solid var(--nav-color);
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
+
+.links a:hover {
+    border: 2px solid #FFFF;
+    transition: ease-in-out 0.2s;
+    color: var(--nav-color);
+    background-color: white;
+}
+
+.buttonIcon {
+    width: 25px;
+    height: 25px;
+    background-image: url('./components/images/menu_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+    visibility: hidden;
+}
+
+.closeIcon {
+    width: 25px;
+    height: 25px;
+    background-image: url('./components/images/close_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 30px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
+}
+
+.MenuLinks {
+    background-color: #FFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.MenuLinks ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    list-style-type: none;
+    margin-top: 10px;
+    gap: 35px;
+}
+
+.MenuLinks a {
+    color: black;
+    /* border: #051527 1px solid; */
+    padding: 10px 40px;
+    text-decoration: none;
+    margin: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.MenuLinks a:hover {
+    text-decoration: underline;
+}
+
+main {
+    min-height: 80vh;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.OrgContainer {
+    display: flex;
+    align-items: center;
+    background-color: #0b2541;
+    color: ghostwhite;
+    justify-content: center;
+    padding: 30px 250px 30px 250px;
+}
+
+.OrgContainer img {
+    max-width: 400px;
+    max-height: 120px;
+}
+
+.OrgDescriptionContainer {
+    margin-left: 50px;
+}
+
+.OrgDescriptionContainer h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5rem;
+}
+
+.OrgDescriptionContainer p {
+    padding-top: 0;
+    margin-top: 10px;
+}
+
+.roster-header-text {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5.4rem;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+
+.roster-header-text-description {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.RosterSection {
+    /* border: orange 20px solid; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.AchievementsSection {
+    color: white;
+    background-color: #0b2541;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.MatchesSection {
+    color: #FFFF;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 1500px) {
+    
+    .RosterSection {
+        justify-content: space-around;
+        gap: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;  
+    }
+    
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .OrgContainer {
+        flex-direction: column;
+        padding: 30px 50px 30px 50px;
+    }
+
+    .OrgContainer img {
+        max-height: 90px;
+    }
+
+    .OrgDescriptionContainer h3 {
+        margin-left: -50px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .roster-header-text {
+        font-size: 3.4rem;
+    }
+
+    .roster-header-text-description {
+        font-size: 1.5rem;
+        padding: 0px 40px;
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+
+    .links {
+        display: none;
+        visibility: hidden;
+    }
+
+    .buttonIcon {
+        display: inline-block;
+        visibility: visible;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .MenuLinks ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        list-style-type: none;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .MenuLinks a {
+        color: black;
+        /* border: #051527 1px solid; */
+        padding: 10px 40px;
+        text-decoration: none;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+}
+  

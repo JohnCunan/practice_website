@@ -1,0 +1,10 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.ReviewContainer h3 {
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+}

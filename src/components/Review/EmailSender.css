@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');  
+
+body {
+    scroll-behavior: smooth;
+}
+
+.EmailForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.EmailForm label {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5rem;
+    margin-top: 30px;
+}
+
+.EmailForm textarea {
+    width: 750px;
+    height: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #0b2541;
+    border-radius: 5px;
+    resize: none;
+}
+
+input[type="submit"] {
+    margin: 20px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #0b2541;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 3px #FFF;
+}
+  
+input[type="submit"]:hover {
+    background-color: white;
+    border: solid 3px #0b2541;
+    color: #0b2541;
+    transition: ease-in-out 0.15s;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal button {
+    width: 50%;
+    margin: auto;
+}
+  
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 890px) {
+
+    .EmailForm textarea {
+        width: 550px;
+    }
+
+} 
+
+@media only screen and (max-width: 580px) {
+
+    .EmailForm textarea {
+        width: 480px;
+    }
+
+} 
+
+@media only screen and (max-width: 490px) {
+
+    .EmailForm label {
+        font-size: 3.4rem;
+    }
+
+    .EmailForm textarea {
+        width: 440px;
+        font-size: 16px;
+    }
+
+    .modal-content h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .EmailForm textarea {
+        width: 340px;
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (max-width: 330px) {
+
+    .EmailForm textarea {
+        width: 240px;
+        font-size: 16px;
+    }
+
+}
+
+
+
+  
