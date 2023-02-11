@@ -88,7 +88,7 @@ export default function App() {
           <Review />
         </div>
       </main>
-      <Footer />
+      
     </div>
   );
 }
