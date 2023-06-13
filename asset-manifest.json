@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/practice_website/static/css/main.a67819f9.css",
+    "main.js": "/practice_website/static/js/main.90848f9e.js",
+    "static/media/t3.png": "/practice_website/static/media/t3.3fc1f20e43a47fb4e8fa.png",
+    "static/media/t4.png": "/practice_website/static/media/t4.6fbd65e5e8b9c1c1c8ad.png",
+    "static/media/t1.png": "/practice_website/static/media/t1.5ee544348a9cc5ad1c9f.png",
+    "static/media/t2.png": "/practice_website/static/media/t2.080382524473f9f7b28f.png",
+    "static/media/background.jpg": "/practice_website/static/media/background.5a7f2e57df90c656d3bf.jpg",
+    "static/media/img1.jpg": "/practice_website/static/media/img1.6032752d71113e8b2110.jpg",
+    "static/media/player.png": "/practice_website/static/media/player.f9e3dd1478752b2eb3aa.png",
+    "static/media/Logo.png": "/practice_website/static/media/Logo.3210da218f3afb63fdd7.png",
+    "static/media/img2.jpg": "/practice_website/static/media/img2.b071df501bd7ddfcbb57.jpg",
+    "static/media/p9.png": "/practice_website/static/media/p9.608a790d8c464c5cf14a.png",
+    "index.html": "/practice_website/index.html",
+    "main.a67819f9.css.map": "/practice_website/static/css/main.a67819f9.css.map",
+    "main.90848f9e.js.map": "/practice_website/static/js/main.90848f9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a67819f9.css",
+    "static/js/main.90848f9e.js"
+  ]
+}
